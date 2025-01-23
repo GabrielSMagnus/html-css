@@ -10,6 +10,7 @@
         }
 
         table {
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
@@ -24,6 +25,12 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:rgb(92, 92, 92) ;
+        }
+
 
         .num {
             text-align: right;
@@ -34,6 +41,10 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray
         }
     </style>
 </head>
@@ -54,9 +65,9 @@
         <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Nº</th>
+                <th scope="col">Nº</th>
                 <th scope="col">Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
@@ -126,6 +137,21 @@
                 <td>Amazonas</td>
                 <td class="num">4 281 209</td>
             </tr>
+             <tr>
+                <td>13</td>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
+             <tr>
+                <td>13</td>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
+             <tr>
+                <td>13</td>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
             <tr>
                 <td>14</td>
                 <td>Paraíba</td>
@@ -142,10 +168,12 @@
         <tfoot>
             <tr>
                 <td></td>
-                <th>Total de habitantes:</th>
+                <th scope="row">Total de habitantes:</th>
                 <td class="num"><strong>123 456 789</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis architecto id fugit, animi illo a corrupti sequi et iusto ipsam fugiat distinctio quasi. Impedit molestiae quam inventore molestias saepe. Quod voluptatum aperiam sit. Voluptate nihil porro blanditiis cumque accusamus aut nemo distinctio in recusandae, mollitia sed. Fugiat illum ducimus corrupti dolores deserunt obcaecati saepe maxime omnis cupiditate nobis aperiam voluptate rerum explicabo, reiciendis voluptatum deleniti blanditiis voluptatibus, quibusdam esse autem distinctio. Itaque deserunt consequatur error aliquam dolorum suscipit atque. Iure incidunt sit, deserunt tenetur est delectus distinctio labore nostrum molestias tempora ut laboriosam, excepturi sed placeat quod modi nisi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis architecto id fugit, animi illo a corrupti sequi et iusto ipsam fugiat distinctio quasi. Impedit molestiae quam inventore molestias saepe. Quod voluptatum aperiam sit. Voluptate nihil porro blanditiis cumque accusamus aut nemo distinctio in recusandae, mollitia sed. Fugiat illum ducimus corrupti dolores deserunt obcaecati saepe maxime omnis cupiditate nobis aperiam voluptate rerum explicabo, reiciendis voluptatum deleniti blanditiis voluptatibus, quibusdam esse autem distinctio. Itaque deserunt consequatur error aliquam dolorum suscipit atque. Iure incidunt sit, deserunt tenetur est delectus distinctio labore nostrum molestias tempora ut laboriosam, excepturi sed placeat quod modi nisi?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis architecto id fugit, animi illo a corrupti sequi et iusto ipsam fugiat distinctio quasi. Impedit molestiae quam inventore molestias saepe. Quod voluptatum aperiam sit. Voluptate nihil porro blanditiis cumque accusamus aut nemo distinctio in recusandae, mollitia sed. Fugiat illum ducimus corrupti dolores deserunt obcaecati saepe maxime omnis cupiditate nobis aperiam voluptate rerum explicabo, reiciendis voluptatum deleniti blanditiis voluptatibus, quibusdam esse autem distinctio. Itaque deserunt consequatur error aliquam dolorum suscipit atque. Iure incidunt sit, deserunt tenetur est delectus distinctio labore nostrum molestias tempora ut laboriosam, excepturi sed placeat quod modi nisi?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis architecto id fugit, animi illo a corrupti sequi et iusto ipsam fugiat distinctio quasi. Impedit molestiae quam inventore molestias saepe. Quod voluptatum aperiam sit. Voluptate nihil porro blanditiis cumque accusamus aut nemo distinctio in recusandae, mollitia sed. Fugiat illum ducimus corrupti dolores deserunt obcaecati saepe maxime omnis cupiditate nobis aperiam voluptate rerum explicabo, reiciendis voluptatum deleniti blanditiis voluptatibus, quibusdam esse autem distinctio. Itaque deserunt consequatur error aliquam dolorum suscipit atque. Iure incidunt sit, deserunt tenetur est delectus distinctio labore nostrum molestias tempora ut laboriosam, excepturi sed placeat quod modi nisi?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis architecto id fugit, animi illo a corrupti sequi et iusto ipsam fugiat distinctio quasi. Impedit molestiae quam inventore molestias saepe. Quod voluptatum aperiam sit. Voluptate nihil porro blanditiis cumque accusamus aut nemo distinctio in recusandae, mollitia sed. Fugiat illum ducimus corrupti dolores deserunt obcaecati saepe maxime omnis cupiditate nobis aperiam voluptate rerum explicabo, reiciendis voluptatum deleniti blanditiis voluptatibus, quibusdam esse autem distinctio. Itaque deserunt consequatur error aliquam dolorum suscipit atque. Iure incidunt sit, deserunt tenetur est delectus distinctio labore nostrum molestias tempora ut laboriosam, excepturi sed placeat quod modi nisi?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis architecto id fugit, animi illo a corrupti sequi et iusto ipsam fugiat distinctio quasi. Impedit molestiae quam inventore molestias saepe. Quod voluptatum aperiam sit. Voluptate nihil porro blanditiis cumque accusamus aut nemo distinctio in recusandae, mollitia sed. Fugiat illum ducimus corrupti dolores deserunt obcaecati saepe maxime omnis cupiditate nobis aperiam voluptate rerum explicabo, reiciendis voluptatum deleniti blanditiis voluptatibus, quibusdam esse autem distinctio. Itaque deserunt consequatur error aliquam dolorum suscipit atque. Iure incidunt sit, deserunt tenetur est delectus distinctio labore nostrum molestias tempora ut laboriosam, excepturi sed placeat quod modi nisi?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis architecto id fugit, animi illo a corrupti sequi et iusto ipsam fugiat distinctio quasi. Impedit molestiae quam inventore molestias saepe. Quod voluptatum aperiam sit. Voluptate nihil porro blanditiis cumque accusamus aut nemo distinctio in recusandae, mollitia sed. Fugiat illum ducimus corrupti dolores deserunt obcaecati saepe maxime omnis cupiditate nobis aperiam voluptate rerum explicabo, reiciendis voluptatum deleniti blanditiis voluptatibus, quibusdam esse autem distinctio. Itaque deserunt consequatur error aliquam dolorum suscipit atque. Iure incidunt sit, deserunt tenetur est delectus distinctio labore nostrum molestias tempora ut laboriosam, excepturi sed placeat quod modi nisi?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perferendis architecto id fugit, animi illo a corrupti sequi et iusto ipsam fugiat distinctio quasi. Impedit molestiae quam inventore molestias saepe. Quod voluptatum aperiam sit. Voluptate nihil porro blanditiis cumque accusamus aut nemo distinctio in recusandae, mollitia sed. Fugiat illum ducimus corrupti dolores deserunt obcaecati saepe maxime omnis cupiditate nobis aperiam voluptate rerum explicabo, reiciendis voluptatum deleniti blanditiis voluptatibus, quibusdam esse autem distinctio. Itaque deserunt consequatur error aliquam dolorum suscipit atque. Iure incidunt sit, deserunt tenetur est delectus distinctio labore nostrum molestias tempora ut laboriosam, excepturi sed placeat quod modi nisi?</p>
 </body>
 </html>
